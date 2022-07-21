@@ -1,4 +1,4 @@
-#RSScool
+
 ## Junior Frontend Developer  Junior Automation Tester Junior IOS Developer 
 #### Contact Information : 
 
