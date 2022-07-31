@@ -1,56 +1,182 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
+<!--Каждый HTML-документ начинается с декларации типа документа, или «доктайпа». Тип документа необходим, чтобы браузер мог определить версию HTML и правильно отобразить страницу-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-  
-<body>
-   <!-- Preloader -->
-  <div id="preloader">
-    <div id="status">
-    </div>
-  </div>
-    <!-- ./Preloader -->
-   <!-- header -->
-    <header>
+<!--Тегу <html> обычно добавляют важный атрибут lang (сокращение от английского «language»), в котором задаётся язык документа-->
 
-        <nav>
-            <ul>
-                <!-- What is anhor targets Anchor targets 
+<head>
+  <!--Тег <head> хранит важную служебную информацию,-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <!--а атрибут rel со значением stylesheet говорит браузеру, что мы подключаем именно стили, а не что-то другое.
+  -->
+  <link rel="icon" href="./assets/images/Pig.ico">
+  <title>MyBestSite</title>
+  <!--пишется в head-->
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header>
+
+    <nav>
+      <ul>
+        <!-- What is anhor targets Anchor targets 
 Anchor target to navigate within the same page. By prepending your href with #, you can target an HTML element with a specific id attribute.
 
 For example, <a href="#footer"> will navigate to the <div id="footer"> within the same HTML document. This type of href is often used to navigate back to the top of the page.
 -->
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">experience</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--мейн основое содержимое -->
+    <!-- <main hidden: true если SinglePageApp делать хиден чтобы менять содержимое страницы делая видимым тот или иной main будет работать в спа -->
     <!-- ./header -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status">
+      </div>
+    </div>
+    <!-- ./Preloader -->
+
     <!-- home -->
-  <div>
-    <h4> Dima Kozhanovski </h4>
-    <h1>QA automation &<br /> Junior Ios &<br /> Junior JS</hi>
-  </div>
-   <!-- ./home -->
-  <!-- about -->
-  <div id="about">
-      <h4>01</h4>
-        <h1> About me</h1>
-        <p>Eager beaver</p>
-  </div> 
+    <div class="makecenter">
+      <div >
+        <h1> Dima Kozhanovski </h1>
+       
+        <h2>QA automation &<br /> Junior Ios &<br /> Junior JS</h2>
+        <div class="photoclass " >
+          <img src="./assets/images/3.png" alt="The best future employee">
+        </div>
+        
+      </div>
+    </div>
+    <!-- ./home -->
+    <!-- about -->
+    <div class="makecenter" id="about">
+      <!--Атрибут lang можно задавать любым тегам, если нужно уточнить, на каком языке написан текст внутри тега-->
+      
+      <h1> About me</h1>
+      <h4>1</h4>
+      <p> 1. Lover of adventures( for my own fifth point too)
+        2. Lover of a good dose of adrenalin( base jumping , parachute jumping, half marathons , yachting ( not on the
+        Minsk Sea of course) jogging ,running away from riot police special forces( currently unavailable )
+        3. Sociopath ( but not on the work)
+        4. Lover of games ( mostly for PC )
+        5. Rebel
+        6. Lover of the approach , how technology are changing our world and mankind.
+        7. Lover of good quality wines ( in app Vivino my list is including more the one hundred items)
+        8. Lover of good books and even a bit writer
+        9 . Lover of tennis
+        10. Gourmet
+        11 . Lover of MMA and Greek-Roman wrestling.
+        12. Skylark .
+        13. Also with list of wines i has the list of gudjets which one will be brought to me gargantuan amounts of
+        money.
+        14. If I was not a usual person, I would be an diplomatic person ( my test of personality is showed that I am "
+        The Devil’s Advocate" )by the way.
+        15. Eager beaver
+        16 . Lover of touring
+        17. Lover of Russian Federation and Kiev
+        18. I am seriously considering selling one eye or liver to be able to participate in commercial space travel
+        Currently working on my own ultra-casual game for IOS about global warming via SpriteKit ( because i know basics
+        of swit syntactic etc ( classes , functions , types of data , dictionaries , arrays ,sets , closures and so
+        forth )</p>
+    </div>
     <!-- ./about -->
-  <!-- experience  -->
-  <div id="experience">
-    <h4>02</h4>
-    <h1> My <br /> Experience</h1>
-  </div>
-   <!-- ./experience -->
+    <!-- experience  -->
+    <div class="makecenter" id="experience">
+      <h4>2</h4>
+      <h1> My <br /> Experience</h1>
+      <p> IT, System Integration, Internet :
+
+        Mobile QA Engineer (Lifetech)
+        March 2022 — currently
+        Working on the "BIP" application in close collaboration with an international team .Testing new builds and
+        features using all types of test documentation. Agile work using Jira as an activity tracker.
+        Location : Minsk
+        <br />
+        <br />
+        Mobile QA Engineer (Remdev)
+        November 2021 — january 2022
+        Testing complex applications (including web and mobile parts) by installing projects on a personal Mac. Active
+        use of Xcode as the main application for testing (including built-in memory leak tools)
+        Application testing, including hardware. Working with Figma. "Agile" work using Jira and Timely as an activity
+        tracker.
+        Location : Minsk
+        <br />
+        <br />
+        Mobile QA Engineer + Automation Junior Tester (Abiatec)
+        June 2021 — august 2021
+        Testing of the mobile application ("Timber"), testing new JS files locally, End-to- End testing with Cypress.
+        Location : Minsk
+        <br />
+        <br />
+
+
+        Manual QA specialist(Own APP)
+        September 2020 — august 2021
+        Testing of the own app ( finding memory leaks , breakpoints ) and so on while working on own pet project (
+        Sprite Kit , Swift Ui , Ui Kit ) . Project is a game for children about ecology.
+        Location : Minsk
+        <br />
+        <br />
+
+        Manual mobile tester(Arateg)
+        January 2020 — september 2020
+        Testing mobile applications on simulators and emulators, on real devices. Work in Jira. Working with a
+        specialized plugin for test documentation in TM4J. Interaction with the development team, customers, team
+        leader. Deep understanding of all technical processes, technologies and business processes in the company. Work
+        on Agile methodology. Experience with Sigma. Experience with Sentry.
+        Location : Minsk
+        <br />
+        <br />
+        <h4>3</h4>
+      <h1>Experience in non-IT</h1>
+     
+
+      Bouncer("Admiral Company" -Casino")
+      April 2017 — september 2020
+      Guest safety, conflict resolution, cashing out slot machines
+      Location : Minsk</p>
+    </div>
+    <!-- ./experience -->
+    <!--projects-->
+    <div class="makecenter" id="projects">
+      <h4>4</h4>
+      <h1>Projects</h1>
+      <p>On my career path "Manual Mobile QA has so many different projects in IT, some of them are under NDA". Let me
+        describe some of them in a few words: PIQ is the Cumbercome Web Plus mobile app for food pre-orders and seat
+        reservations in Germany and the UK. , Sero Health -
+        IOS application for a product that allows remote EMDR therapy.
+        Timber is an IOS app for clients from Belgium and France,
+        the name of the application speaks for itself, ZorkaMobi is a digital agency, Allbry is a Telehealth product and
+        some others are under NDA. As for my steps as a developer, I started with Swift and currently have two projects
+        in progress on github: Happy pig (SpriteKit, UiKit, SwiftUi) - a game about global warming and environmental
+        threats in different countries (located in a private repository) and FunnyWheather(test - assignment for Junior
+        Ios dev position)
+        <a href="https://github.com/DimaKozhanovsky/FunnyWeather">Github </a>
+      </p>
+    </div>
+    <!--./projects-->
+    <div class="makecenter" id="contact">
+      <h4>5</h4>
+      <h1> Contact </h1>
+      <a href="https://www.linkedin.com/in/dmitrykozhanovski/"> Linkedin</a>
+    </div>
+  </main>
+  <footer class="makecenter" class="footer">
+    <h1> &copy All rights reserved by Dima Kozhanovski &reg;</h1>
+  </footer>
 </body>
+
 </html>
