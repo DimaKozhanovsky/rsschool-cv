@@ -56,6 +56,7 @@ h4 {
     position: relative;
     color: #000000;
     margin-left: 40px;
+    margin-right:40px ;
     font-weight: 700;
 }
 /*
@@ -68,7 +69,7 @@ h4:before {
     content: "";
     display: block;
     height: 2px;
-    
+    align-content: center;
     top: 9px;
 }
 
@@ -122,7 +123,7 @@ body {
     margin: -50px 0 0 -50px
 }
 
-.preloader {
+.preloader {o
     height: 40px;
     width: 40px;
     margin-top: -20px;
@@ -156,7 +157,7 @@ body {
     animation: wink 1s ease-in-out infinite alternate
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) { 
     .preloader {
         height: 60px;
         width: 60px;
@@ -191,7 +192,7 @@ body {
     }
 }
 
-@-webkit-keyframes rotation {
+@-webkit-keyframes rotation { /* at-rules), они начинаются с символа @, например, @font-face. «Эт-правила» ещё называют CSS-директивами*/
     from {
         -webkit-transform: rotate(0);
         transform: rotate(0)
@@ -827,9 +828,9 @@ text-align: center;
     
     bottom:5px;
     right:5px;
-    opacity:0.5;
+    opacity:1;
     z-index:99;
-    color:white; 
+   
 }
 .photoclass{
     width: 100%;
@@ -844,4 +845,11 @@ text-align: center;
     max-width: 100%;
     max-height: 100%;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.paragrafmodify{
+    text-align:start;
+}
+.container{
+    
+    padding: 20px;
 }
