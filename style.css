@@ -781,6 +781,11 @@ fieldset {
         padding: 0 2px;
     }
 }
+@media (max-width: 768px){
+    .gifformobile{
+        size: 50px 50px;
+    }
+}
 
 @media (max-width: 768px) {
     .timeline-event-copy {
@@ -852,4 +857,8 @@ text-align: center;
 .container{
     
     padding: 20px;
+}
+
+.gifformobile{
+    
 }
