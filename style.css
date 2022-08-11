@@ -820,6 +820,10 @@ fieldset {
     nav li a {
         font-size: 10px;
     }
+    .forimage{
+        width:100% ;
+        display: block;
+    }
 }
 .makecenter {
 
