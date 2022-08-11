@@ -175,6 +175,8 @@ body {
         margin-top: -18.75px;
         margin-left: -7.95px
     }
+   
+
 }
 
 @media only screen and (min-width:1200px) {
@@ -190,6 +192,8 @@ body {
         margin-top: -25px;
         margin-left: -10.6px
     }
+    
+
 }
 
 @-webkit-keyframes rotation { /* at-rules), они начинаются с символа @, например, @font-face. «Эт-правила» ещё называют CSS-директивами*/
@@ -785,6 +789,7 @@ fieldset {
     .gifformobile{
         size: 50px 50px;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -792,6 +797,7 @@ fieldset {
         width: 90%;
         left: 2em;
     }
+    
 }
 
 @media (max-width: 500px) {
@@ -811,6 +817,7 @@ fieldset {
         list-style: none;
         margin: 10px 0;
     }
+    
 }
 
 @media (max-width: 420px) {
@@ -820,6 +827,21 @@ fieldset {
     nav li a {
         font-size: 10px;
     }
+<<<<<<< HEAD
+    .forimage{
+        width:100% ;
+        display: block;
+    }
+=======
+    .forimage {
+        
+        overflow-x: scroll;
+        width:100%;
+        display: block;
+        
+        }
+         
+>>>>>>> b686b9122821fb1ce0fbd58ac8902be55ef264f6
 }
 .makecenter {
 
@@ -858,4 +880,3 @@ text-align: center;
     
     padding: 20px;
 }
-
