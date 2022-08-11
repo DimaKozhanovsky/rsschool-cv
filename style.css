@@ -827,21 +827,12 @@ fieldset {
     nav li a {
         font-size: 10px;
     }
-<<<<<<< HEAD
+
     .forimage{
         width:100% ;
         display: block;
     }
-=======
-    .forimage {
         
-        overflow-x: scroll;
-        width:100%;
-        display: block;
-        
-        }
-         
->>>>>>> b686b9122821fb1ce0fbd58ac8902be55ef264f6
 }
 .makecenter {
 
