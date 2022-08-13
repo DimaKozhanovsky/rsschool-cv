@@ -102,6 +102,10 @@ body {
     line-height: 24px;
 }
 
+h5{
+  
+    Bottom :20px;
+    }
 
 .size-50 {
     font-size: 50px;
@@ -859,17 +863,9 @@ animation: rotation 12s  ;
 animation-delay: 5s ;
 animation-iteration-count:infinite;
 text-align: center;
+}
+    
 
-    
-}
-.footer{
-    
-    bottom:5px;
-    right:5px;
-    opacity:1;
-    z-index:99;
-   
-}
 .photoclass{
     width: 100%;
     max-width: 1000px;
@@ -902,7 +898,11 @@ text-align: center;
     text-align: center;
 }
 
+.footer {
 
+  left: 0;
+  bottom: 0;
+}
 
 /* CSS */
 .button-1 {
