@@ -5,9 +5,27 @@
 */
 
 *{
-    font-family: fantasy
+    font-family: fantasy;
+    
 }
 
+.bg-image {
+    /* The image used */
+    
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
 /* Table of Content
 ==================================================
 	- Google fonts & font family -
@@ -831,6 +849,7 @@ fieldset {
     .forimage{
         width:100% ;
         display: block;
+    
     }
         
 }
@@ -840,6 +859,7 @@ animation: rotation 12s  ;
 animation-delay: 5s ;
 animation-iteration-count:infinite;
 text-align: center;
+
     
 }
 .footer{
@@ -868,6 +888,51 @@ text-align: center;
     text-align:start;
 }
 .container{
-    
+    width: 100%;
+    height:100vh ;
     padding: 20px;
+   
+  
+   
+}
+.demo {
+    position: relative;
+    z-index: 30;
+    position: relative;
+    text-align: center;
+}
+
+
+
+/* CSS */
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: fantasy;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
 }
