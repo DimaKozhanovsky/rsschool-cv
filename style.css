@@ -339,17 +339,18 @@ a.active {
     height: 100vh;
 }
 
-.btn{
+.btn:hover{
     position: absolute; /* работает в другом потоке привязвается к размер страницы   */
     top: 200px;
     left: 150px;
     outline: none !important;
     border: none;
+    
 }
 .counter{
     position: absolute;
     top: 350px;
-    left: 1000px;
+    left: 950px;
     font-size: 275px;
     color: deepskyblue;
 }
