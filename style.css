@@ -339,7 +339,7 @@ a.active {
     height: 100vh;
 }
 
-.btn:hover{
+.btn{
     position: absolute; /* работает в другом потоке привязвается к размер страницы   */
     top: 200px;
     left: 150px;
@@ -350,7 +350,7 @@ a.active {
 .counter{
     position: absolute;
     top: 350px;
-    left: 950px;
+    left: 800px;
     font-size: 275px;
     color: deepskyblue;
 }
@@ -826,6 +826,7 @@ fieldset {
         size: 50px 50px;
     }
     
+    
 }
 
 @media (max-width: 768px) {
@@ -833,7 +834,22 @@ fieldset {
         width: 90%;
         left: 2em;
     }
-    
+     .btn img {
+        width: 40px;
+        height: 40px;  
+    }
+    .counter {
+        width: 40px;
+        height: 40px; 
+    } 
+    .counter {
+        position: absolute;
+        top: 275px;
+        left: 275px;
+        font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
+       
+ 
+     } 
 }
 
 @media (max-width: 500px) {
@@ -853,7 +869,23 @@ fieldset {
         list-style: none;
         margin: 10px 0;
     }
-    
+      .btn img{
+         
+        width: 40px;
+        height: 40px;
+    }
+    .counter {
+        width: 40px;
+        height: 40px; 
+    } 
+    .counter {
+        position: absolute;
+        top: 275px;
+        left: 275px;
+        font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
+       
+ 
+     } 
 }
 
 @media (max-width: 420px) {
@@ -869,7 +901,52 @@ fieldset {
         display: block;
     
     }
+        .btn img{
+            width: 40px;
+            height: 40px;  
+        }
+        .counter {
+            width: 40px;
+            height: 40px; 
+        } 
+        .counter {
+            position: absolute;
+            top: 275px;
+            left: 275px;
+            font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
+           
+     
+         } 
         
+}
+@media (max-width: 420px) {
+    nav li {
+        margin: 6px;
+    }
+    nav li a {
+        font-size: 10px;
+    }
+
+    .forimage{
+        width:90% ;
+        display: block;
+    
+    }
+    .btn img{
+        width: 40px;
+        height: 40px;
+        position: absolute; /* работает в другом потоке привязвается к размер страницы   */
+    top: 60px;
+    left: -80px;
+    }
+    .counter {
+       position: absolute;
+       top: 275px;
+       left: 275px;
+       font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
+      
+
+    } 
 }
 .makecenter {
 
