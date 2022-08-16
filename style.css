@@ -1022,7 +1022,7 @@ text-align: center;
   touch-action: manipulation;
 }
 
-.button-1:hover,
+.button-1,
 .button-1:focus {
   background-color: #F082AC;
 }
