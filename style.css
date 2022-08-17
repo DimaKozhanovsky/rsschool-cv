@@ -345,7 +345,7 @@ a.active {
     left: 70px;
     outline: none !important; 
     border: none;
-    background-color:#e9266d ;
+   
 }
 .counter{ 
     position: absolute; /* на глобальном не в медиа */
