@@ -4,16 +4,16 @@
 * website : www.ahmedessa.net
 */
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    
+*{   /* The image used * боксайзиг бордеобокс обязатедьно!!! или все стили можно ложить в мустрку */
+    font-family: fantasy;
+
 }
 
 .bg-image {
     /* The image used */
     
   
-    /* Add the blur effect */
+    /* Add the blur effect * можно использовать бекдроп фильтр*/
     filter: blur(8px);
     -webkit-filter: blur(8px);
   
@@ -242,7 +242,7 @@ h5{
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
     }
-}
+}g
 
 @-webkit-keyframes wink {
     from {
@@ -341,16 +341,16 @@ a.active {
 
 .btn{
     position: absolute; /* работает в другом потоке привязвается к размер страницы   */
-    top: 200px;
-    left: 150px;
-    outline: none !important;
+    top: 50px;
+    left: 70px;
+    outline: none !important; 
     border: none;
-    
+    background-color:#e9266d ;
 }
-.counter{
-    position: absolute;
-    top: 350px;
-    left: 800px;
+.counter{ 
+    position: absolute; /* на глобальном не в медиа */
+    top: 50px; /* отсчет от верхнего вернего угла*/
+    left: 60%;/* указавыть в процетрах*/
     font-size: 275px;
     color: deepskyblue;
 }
@@ -935,9 +935,7 @@ fieldset {
     .btn img{
         width: 40px;
         height: 40px;
-        position: absolute; /* работает в другом потоке привязвается к размер страницы   */
-    top: 60px;
-    left: -80px;
+       
     }
     .counter {
        position: absolute;
@@ -947,6 +945,10 @@ fieldset {
       
 
     } 
+}
+#imageOnImage{
+    position: relative;
+    
 }
 .makecenter {
 

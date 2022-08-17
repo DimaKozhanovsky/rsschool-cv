@@ -18,7 +18,7 @@ Hi , thank you for your attention to my humble person.
 5. Rebel
 6. Lover of the approach , how technology are changing our world and mankind.
 7. Lover of good quality wines ( in app Vivino my list is including more the one hundred items)
-8. Lover of good books and even a bit writer
+8. Lover of good books and even a bit writer         
 9 . Lover of tennis
 10. Gourmet
 11 . Lover of MMA and Greek-Roman wrestling.
