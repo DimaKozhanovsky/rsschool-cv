@@ -1,6 +1,6 @@
 
 function myFunction() {
-    document.querySelector('.bg-image').classList.remove('bg-image');// документ элемент родитель 
+    document.querySelector('.bg-image').remove();// документ элемент родитель 
       document.querySelector('.demo').remove()
 
     // if (confirm("Press a button!")) {
@@ -36,7 +36,7 @@ document.querySelectorAll('.btn') // находим кнопку
 // }); 
 
 const btn = document.querySelector('.btn');
-const counter = document.querySelector('.counter');
+const counter = document.querySelector('.counter span');
 let counterState = 0
 const myStorage = window.localStorage.getItem("likeCounter");
 if (myStorage) {
