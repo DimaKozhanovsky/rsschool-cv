@@ -340,17 +340,13 @@ a.active {
 }
 
 .btn{
-    position: absolute; /* работает в другом потоке привязвается к размер страницы   */
-    top: 50px;
-    left: 70px;
+    
     outline: none !important; 
     border: none;
    
 }
 .counter{ 
-    position: absolute; /* на глобальном не в медиа */
-    top: 50px; /* отсчет от верхнего вернего угла*/
-    left: 60%;/* указавыть в процетрах*/
+   line-height: 354px;
     font-size: 275px;
     color: deepskyblue;
 }
@@ -843,9 +839,7 @@ fieldset {
         height: 40px; 
     } 
     .counter {
-        position: absolute;
-        top: 275px;
-        left: 275px;
+        
         font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
        
  
@@ -910,11 +904,9 @@ fieldset {
             height: 40px; 
         } 
         .counter {
-            position: absolute;
-            top: 275px;
-            left: 275px;
+            
             font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
-           
+            
      
          } 
         
@@ -938,20 +930,28 @@ fieldset {
        
     }
     .counter {
-       position: absolute;
-       top: 275px;
-       left: 275px;
+       
        font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
       
 
     } 
 }
-#imageOnImage{
-    position: relative;
+.imageOnImage{
+    position: absolute; /*  вылетет из потока и ищет предка если   */
+    width: 100%;
+    max-width: 90%;
+    display:flex;
+    margin : 0 auto;
+    justify-content: space-between;
+    border: solid 2px #425BB5;
+    border-color: #425BB5;
+    border-width: 15px;
+   
+
     
 }
 .makecenter {
-
+position: relative; /* дети в контейнере если делать позишн абсолют то они будут отталкивать от этого большого дива */
 animation: rotation 12s  ;
 animation-delay: 5s ;
 animation-iteration-count:infinite;
@@ -960,6 +960,7 @@ text-align: center;
     
 
 .photoclass{
+    
     width: 100%;
     max-width: 1000px;
     height: 100%;
