@@ -342,8 +342,11 @@ a.active {
 .btn{
     
     outline: none !important; 
-    border: none;
-   margin-left: 20px;
+    background-color: white;
+    border-color:white ;
+    border-width: 0px;
+    margin-left: 20px;
+
    
 }
 .counter{ 
@@ -1022,4 +1025,34 @@ text-align: center;
     z-index: 20;
     background-color: rgba(204, 0, 245, 0.411); 
     backdrop-filter: blur(1px)
+}
+.upAndDown{
+    width:24px;
+    height:24px;
+    position:relative;
+   
+}
+
+.upAndDown:hover{
+    animation: glide 0.2s ease-in-out alternate infinite ;
+    -webkit-animation:glide 0.2s ease-in-out alternate infinite; 
+    
+
+}
+@keyframes glide {
+    from {left:0px; top:-20px;}
+
+    to {left:0px; top:10px;}
+}
+
+@-webkit-keyframes glide {
+    from {left:0px; top:0px;}
+    to {left:0px; top:20px;}
+}
+.enlarge{
+    transition: all .000001s ease-in-out;
+    
+}
+.pss{
+    transform: scale(1.4); 
 }

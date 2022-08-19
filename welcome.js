@@ -37,6 +37,8 @@ document.querySelectorAll('.btn') // находим кнопку
 
 const btn = document.querySelector('.btn');
 const counter = document.querySelector('.counter span');
+const enlarge = document.querySelector('.enlarge');
+
 let counterState = 0
 const myStorage = window.localStorage.getItem("likeCounter");
 if (myStorage) {
@@ -50,11 +52,21 @@ const setState = ()=> {  // изменет коунтер
 }
 
 
+
 btn.addEventListener('click',(event)=>{ // клики на реальном айосе могут работать не корректно так как клики не тачи ( особено при окривом css) второй агрумент в коде показвает что должно выполнять по нажатию на клик
 counterState +=1
+enlarge.classList.add('pss')
+
+
+
 setState()
 console.log(event)
-}) // 41-43описан и храгнится в web api 46-49  
+})
+enlarge.addEventListener('transitionend',()=>{
+  enlarge.classList.remove('pss')
+})
+
+// 41-43описан и храгнится в web api 46-49  
 setState() // иницализация ( событие выпониться только когда я кликну на кнопку)
 // ПОЧИТАТЬ РЕДАКС 
 //перет тка как 40 строчка проверять есть и лока сторадже
