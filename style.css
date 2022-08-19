@@ -145,7 +145,7 @@ h5{
     margin: -50px 0 0 -50px
 }
 
-.preloader {o
+.preloader {
     height: 40px;
     width: 40px;
     margin-top: -20px;
@@ -217,6 +217,7 @@ h5{
     
 
 }
+
 
 @-webkit-keyframes rotation { /* at-rules), они начинаются с символа @, например, @font-face. «Эт-правила» ещё называют CSS-директивами*/
     from {
@@ -339,18 +340,21 @@ a.active {
     height: 100vh;
 }
 
-.btn{
-    
+.btn {
+    border-color:transparent;
     outline: none !important; 
-    border: none;
+    background-color: white;
+
    margin-left: 20px;
    
 }
-.counter{ 
+.counter { 
+    
    line-height: normal;
     font-size: 275px;
     color: deepskyblue;
     margin-right: 20px;
+   
 }
 /* about section
 ==================================================*/
@@ -485,6 +489,7 @@ a.active {
     -moz-transition: box-shadow 0.5s ease-in 0.1s;
     -o-transition: box-shadow 0.5s ease-in 0.1s;
     -webkit-transition: box-shadow 0.5s ease-in;
+    transition-delay:0.1s ; /* два одинаковых свлйства для разных броузеорв чтобы работало */
     -webkit-transition-delay: 0.1s;
     -webkit-transition: box-shadow 0.5s ease-in 0.1s;
     transition: box-shadow 0.5s ease-in 0.1s;
@@ -1020,6 +1025,43 @@ text-align: center;
    left: 0;
 
     z-index: 20;
-    background-color: rgba(204, 0, 245, 0.411); 
+    background-color: rgba(219, 200, 217, 0.178); 
     backdrop-filter: blur(1px)
 }
+.enlarge{
+    transition: all .2s ease-in-out; 
+    transform: scale(1.1);
+}
+
+.upAndDown:hover {
+    width:24px;
+    height:24px;
+    position:relative;
+    
+     -webkit-animation: glide 0.5s ease-in-out alternate infinite;
+     animation:glide 0.5s ease-in-out alternate infinite;
+    }
+@keyframes glide {
+    from {
+       left:0px;
+       top:20px;
+    }
+    
+    to {
+       left:0px;
+       top:-20px;
+    }
+ 
+ }
+ @-webkit-keyframes glide  {
+    from {
+       left:0px;
+       top:0px;
+    }
+    
+    to {
+       left:0px;
+       top:20px;
+    }
+ 
+ }

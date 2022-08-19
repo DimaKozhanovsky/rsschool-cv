@@ -37,6 +37,7 @@ document.querySelectorAll('.btn') // находим кнопку
 
 const btn = document.querySelector('.btn');
 const counter = document.querySelector('.counter span');
+const enlarge = document.querySelector(".enlarge")
 let counterState = 0
 const myStorage = window.localStorage.getItem("likeCounter");
 if (myStorage) {
@@ -48,10 +49,14 @@ const setState = ()=> {  // изменет коунтер
   counter.textContent = counterState;
   window.localStorage.setItem("likeCounter",counterState.toString());
 }
+enlarge.addEventListener('mouseenter',(eventOne)=> {
+console.log(eventOne)
+})
 
 
 btn.addEventListener('click',(event)=>{ // клики на реальном айосе могут работать не корректно так как клики не тачи ( особено при окривом css) второй агрумент в коде показвает что должно выполнять по нажатию на клик
-counterState +=1
+
+  counterState +=1
 setState()
 console.log(event)
 }) // 41-43описан и храгнится в web api 46-49  
