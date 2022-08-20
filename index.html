@@ -2,6 +2,7 @@
 <!--Каждый HTML-документ начинается с декларации типа документа, или «доктайпа». Тип документа необходим, чтобы браузер мог определить версию HTML и правильно отобразить страницу-->
 <html lang="en">
 <!--Тегу <html> обычно добавляют важный атрибут lang (сокращение от английского «language»), в котором задаётся язык документа-->
+
 <head>
   <!--Тег <head> хранит важную служебную информацию,-->
   <meta charset="UTF-8">
@@ -23,41 +24,48 @@
       Do you want to see my amazing site ?
     </p>
     <button class="button-1" onclick="myFunction()"> Yes!!!</button>
+
     <button class="button-1" onclick="myNoFunction()"> No!!!</button>
   </div>
   <!-- header -->
   <div class="bg-image bigConteiner "> </div>
-  
   <header>
+
     <nav>
       <ul>
         <!-- What is anhor targets Anchor targets 
 Anchor target to navigate within the same page. By prepending your href with #, you can target an HTML element with a specific id attribute.
+
 For example, <a href="#footer"> will navigate to the <div id="footer"> within the same HTML document. This type of href is often used to navigate back to the top of the page.
 -->
-        <li><a href="#about"> About</a></li>
-        <li><a href="#experience"> experience</a></li>
-        <li><a href="#projects"> projects</a></li>
-        <li><a href="#contact"> contact</a></li>
-        <li><a href="#codeexample"> codeexample</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#codeexample">codeexample</a></li>
       </ul>
     </nav>
   </header>
-  
   <main class="container">
     <!--мейн основое содержимое -->
     <!-- <main hidden: true если SinglePageApp делать хиден чтобы менять содержимое страницы делая видимым тот или иной main будет работать в спа -->
     <!-- ./header -->
+
     <!-- Preloader -->
     <div id="preloader">
       <div id="status">
       </div>
     </div>
     <!-- ./Preloader -->
+
     <!-- home -->
     <div class="makecenter ">
+
       <h1> Dima Kozhanovski </h1>
+
       <h2>QA automation &<br /> Junior Ios &<br /> Junior JS</h2>
+
+
       <div class="imageOnImage">
         <div class="upAndDown">
           <button class="btn">
@@ -72,10 +80,11 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
       </div>
       <div class="photoclass">
         <img src="./assets/images/3.png" alt="The best future employee">
+
       </div>
       <div class="makecenter" id="about">
         <!--Атрибут lang можно задавать любым тегам, если нужно уточнить, на каком языке написан текст внутри тега-->
-        <div style="padding-top: 200px" >
+        <div>
           <h1> About me</h1>
           <h4>1</h4>
           <p class="makecenter" class="paragrafmodify">
@@ -112,18 +121,22 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
     </div>
     <!-- ./home -->
     <!-- about -->
+  
     <!-- ./about -->
     <!-- experience  -->
     <div class="makecenter" id="experience">
       <h4>2</h4>
       <h1> My <br /> Experience</h1>
+
       <h4>IT, System Integration, Internet </h4>
+
       <p class="paragrafmodify" style="margin: 15px"> Mobile QA Engineer (Lifetech)
         March 2022 — currently
         Working on the "BIP" application in close collaboration with an international team .Testing new builds and
         features using all types of test documentation. Agile work using Jira as an activity tracker.
         Location : Minsk
       </p>
+
       <p class="paragrafmodify" style="margin: 15px">
         Mobile QA Engineer (Remdev)
         November 2021 — january 2022
@@ -139,6 +152,8 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
         Testing of the mobile application ("Timber"), testing new JS files locally, End-to- End testing with Cypress.
         Location : Minsk
       </p>
+
+
       <p class="paragrafmodify" style="margin: 15px">
         Manual QA specialist(Own APP)
         September 2020 — august 2021
@@ -146,6 +161,7 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
         Sprite Kit , Swift Ui , Ui Kit ) . Project is a game for children about ecology.
         Location : Minsk
       </p>
+
       <p class="paragrafmodify" style="margin: 15px">
         Manual mobile tester(Arateg)
         January 2020 — september 2020
@@ -157,7 +173,10 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
       </p>
     </div>
     <div class="makecenter">
+
+
       <h1>Experience in non-IT</h1> <!--  не рекомендуется теги h  ставить в параграф  -->
+
       <p style="margin: 15px" class="paragrafmodify">
         <!-- каждый тег как блок -->
         Bouncer("Admiral Company" -Casino")
@@ -165,6 +184,7 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
         Guest safety, conflict resolution, cashing out slot machines
         Location : Minsk
       </p>
+
       <iframe class="gifformobile giphy-embed" src="https://giphy.com/embed/3og0IUslmf25k8Ea7C" width="300" height="300"
         frameBorder="0" allowFullScreen></iframe>
     </div>
@@ -173,8 +193,13 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
     <div class="makecenter" id="codeexample">
       <h4>3</h4>
       <h1> Code exapmle in SWIFTUi and Js </h1>
+
+
+
       <img class="forimage" src="./assets/images/CodeJs.png" alt="CodeJs" width="700">
       <img class="forimage" src="./assets/images/CodeSwift.png" alt="Code Best(best)" width="700" height="1000">
+
+
     </div>
     <!-- codeexample -->
     <!--projects-->
@@ -201,7 +226,9 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
         threats in different countries (located in a private repository) and FunnyWheather(test - assignment for
         Junior
         Ios dev position)</p>
+
       <a href="https://github.com/DimaKozhanovsky/FunnyWeather">Github </a>
+
     </div>
     <!--./projects-->
     <div class="makecenter " id="contact" style="padding-top: 1%">
@@ -212,8 +239,15 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
     </div>
     <h1 style="padding-top: 1%"> &copy; All rights reserved by Dima Kozhanovski &reg;</h1>
   </main>
+
+
+
   <script src="./welcome.js"> </script>
+
   <footer class="makecenter footer">
+
   </footer>
+
 </body>
+
 </html>
