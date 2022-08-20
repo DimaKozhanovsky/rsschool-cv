@@ -2,7 +2,6 @@
 <!--Каждый HTML-документ начинается с декларации типа документа, или «доктайпа». Тип документа необходим, чтобы браузер мог определить версию HTML и правильно отобразить страницу-->
 <html lang="en">
 <!--Тегу <html> обычно добавляют важный атрибут lang (сокращение от английского «language»), в котором задаётся язык документа-->
-
 <head>
   <!--Тег <head> хранит важную служебную информацию,-->
   <meta charset="UTF-8">
@@ -14,8 +13,6 @@
   <!--а атрибут rel со значением stylesheet говорит браузеру, что мы подключаем именно стили, а не что-то другое.
   -->
   <link rel="icon" href="./assets/images/Pig.ico">
-
-
   <title>MyBestSite</title>
   <!--пишется в head-->
 </head>
@@ -26,129 +23,108 @@
       Do you want to see my amazing site ?
     </p>
     <button class="button-1" onclick="myFunction()"> Yes!!!</button>
-
     <button class="button-1" onclick="myNoFunction()"> No!!!</button>
   </div>
   <!-- header -->
   <div class="bg-image bigConteiner "> </div>
+  
   <header>
-
     <nav>
       <ul>
         <!-- What is anhor targets Anchor targets 
 Anchor target to navigate within the same page. By prepending your href with #, you can target an HTML element with a specific id attribute.
-
 For example, <a href="#footer"> will navigate to the <div id="footer"> within the same HTML document. This type of href is often used to navigate back to the top of the page.
 -->
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">experience</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li><a href="#codeexample">codeexample</a></li>
+        <li><a href="#about"> About</a></li>
+        <li><a href="#experience"> experience</a></li>
+        <li><a href="#projects"> projects</a></li>
+        <li><a href="#contact"> contact</a></li>
+        <li><a href="#codeexample"> codeexample</a></li>
       </ul>
     </nav>
   </header>
+  
   <main class="container">
     <!--мейн основое содержимое -->
     <!-- <main hidden: true если SinglePageApp делать хиден чтобы менять содержимое страницы делая видимым тот или иной main будет работать в спа -->
     <!-- ./header -->
-
     <!-- Preloader -->
     <div id="preloader">
       <div id="status">
       </div>
     </div>
     <!-- ./Preloader -->
-
     <!-- home -->
     <div class="makecenter ">
-
       <h1> Dima Kozhanovski </h1>
-
       <h2>QA automation &<br /> Junior Ios &<br /> Junior JS</h2>
-
-
       <div class="imageOnImage">
-
         <div class="upAndDown">
           <button class="btn">
             <img src="./assets/images/Like.png" alt="Like">
           </button>
-
-        </div >
+        </div>
         <div class="enlarge ">
           <div class="counter "> <span>
             </span>
-
           </div>
-
         </div>
-
-
       </div>
-
-
       <div class="photoclass">
         <img src="./assets/images/3.png" alt="The best future employee">
-
       </div>
-
-
-
-
-
-
+      <div class="makecenter" id="about">
+        <!--Атрибут lang можно задавать любым тегам, если нужно уточнить, на каком языке написан текст внутри тега-->
+        <div style="padding-top: 200px" >
+          <h1> About me</h1>
+          <h4>1</h4>
+          <p class="makecenter" class="paragrafmodify">
+          <div class="paragrafmodify" style="margin: 15px" >
+            1. Adventurer <br>
+            2. Lover of a good dose of adrenaline (base jumping, parachuting, half marathons, yachting (not on the Minsk
+            Sea
+            of ​​course) jogging, running away from the OMON special forces (currently unavailable)<br>
+            3. Sociopath (but not at work)<br>
+            4. Game lover (mainly for PC)<br>
+            5. Rebel<br>
+            6. Lover of the approach to how technology is changing our world and humanity.<br>
+            7. A lover of quality wines (there are more than a hundred items on my list in the Vivino app)<br>
+            8. Lover of good books and even a bit of a writer<br>
+            9 . Tennis fan and player<br>
+            10. Gourmet<br>
+            11. Fan of MMA and Greco-Roman wrestling.<br>
+            12. Lark.<br>
+            13. Also with the wine list, I have a list of gadgets that should make people's lives easier and better.<br>
+            14. By the way, if I were not an ordinary person, I would be a diplomat (my personality test showed that I am
+            a
+            "devil's advocate").<br>
+            15. "Eager beaver" .<br>
+            16 Touring enthusiast<br>
+            17. Lover of Russia and Kyiv<br>
+            18. I am seriously considering selling one eye or liver to participate in commercial space travel.<br>
+            I am currently working on my own ultra-casual game for IOS about global warming through SpriteKit (as I know
+            the
+            basic syntax of swit, etc. (classes, functions, data types, dictionaries, arrays, sets, closures, etc.)
+          </div>
+          </p>
+        </div>
+      </div>
     </div>
     <!-- ./home -->
     <!-- about -->
-    <div class="makecenter" id="about">
-      <!--Атрибут lang можно задавать любым тегам, если нужно уточнить, на каком языке написан текст внутри тега-->
-
-      <h1> About me</h1>
-      <h4>1</h4>
-
-
-
-
-      <p class="paragrafmodify"> 1. Adventurer
-        2. Lover of a good dose of adrenaline (base jumping, parachuting, half marathons, yachting (not on the Minsk Sea
-        of ​​course) jogging, running away from the OMON special forces (currently unavailable)
-        3. Sociopath (but not at work)
-        4. Game lover (mainly for PC)
-        5. Rebel
-        6. Lover of the approach to how technology is changing our world and humanity.
-        7. A lover of quality wines (there are more than a hundred items on my list in the Vivino app)
-        8. Lover of good books and even a bit of a writer
-        9 . Tennis fan and player
-        10. Gourmet
-        11. Fan of MMA and Greco-Roman wrestling.
-        12. Lark.
-        13. Also with the wine list, I have a list of gadgets that should make people's lives easier and better.
-        14. By the way, if I were not an ordinary person, I would be a diplomat (my personality test showed that I am a
-        "devil's advocate").
-        15. "Eager beaver"
-        16 Touring enthusiast
-        17. Lover of Russia and Kyiv
-        18. I am seriously considering selling one eye or liver to participate in commercial space travel.
-        I am currently working on my own ultra-casual game for IOS about global warming through SpriteKit (as I know the
-        basic syntax of swit, etc. (classes, functions, data types, dictionaries, arrays, sets, closures, etc.)</p>
-    </div>
     <!-- ./about -->
     <!-- experience  -->
     <div class="makecenter" id="experience">
       <h4>2</h4>
       <h1> My <br /> Experience</h1>
-
       <h4>IT, System Integration, Internet </h4>
-
-      <p class="paragrafmodify"> Mobile QA Engineer (Lifetech)
+      <p class="paragrafmodify" style="margin: 15px"> Mobile QA Engineer (Lifetech)
         March 2022 — currently
         Working on the "BIP" application in close collaboration with an international team .Testing new builds and
         features using all types of test documentation. Agile work using Jira as an activity tracker.
         Location : Minsk
       </p>
-
-      <p class="paragrafmodify">
+      <p class="paragrafmodify" style="margin: 15px">
         Mobile QA Engineer (Remdev)
         November 2021 — january 2022
         Testing complex applications (including web and mobile parts) by installing projects on a personal Mac. Active
@@ -157,23 +133,20 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
         tracker.
         Location : Minsk
       </p>
-      <p class="paragrafmodify">
+      <p class="paragrafmodify " style="margin: 15px">
         Mobile QA Engineer + Automation Junior Tester (Abiatec)
         June 2021 — august 2021
         Testing of the mobile application ("Timber"), testing new JS files locally, End-to- End testing with Cypress.
         Location : Minsk
       </p>
-
-
-      <p class="paragrafmodify">
+      <p class="paragrafmodify" style="margin: 15px">
         Manual QA specialist(Own APP)
         September 2020 — august 2021
         Testing of the own app ( finding memory leaks , breakpoints ) and so on while working on own pet project (
         Sprite Kit , Swift Ui , Ui Kit ) . Project is a game for children about ecology.
         Location : Minsk
       </p>
-
-      <p class="paragrafmodify">
+      <p class="paragrafmodify" style="margin: 15px">
         Manual mobile tester(Arateg)
         January 2020 — september 2020
         Testing mobile applications on simulators and emulators, on real devices. Work in Jira. Working with a
@@ -182,13 +155,10 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
         on Agile methodology. Experience with Sigma. Experience with Sentry.
         Location : Minsk
       </p>
-
-
-      <h4>3</h4>
-
+    </div>
+    <div class="makecenter">
       <h1>Experience in non-IT</h1> <!--  не рекомендуется теги h  ставить в параграф  -->
-
-      <p>
+      <p style="margin: 15px" class="paragrafmodify">
         <!-- каждый тег как блок -->
         Bouncer("Admiral Company" -Casino")
         April 2017 — september 2020
@@ -201,53 +171,49 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
     <!-- ./experience -->
     <!-- codeexample -->
     <div class="makecenter" id="codeexample">
-      <h1> Code exapmle </h1>
+      <h4>3</h4>
+      <h1> Code exapmle in SWIFTUi and Js </h1>
+      <img class="forimage" src="./assets/images/CodeJs.png" alt="CodeJs" width="700">
+      <img class="forimage" src="./assets/images/CodeSwift.png" alt="Code Best(best)" width="700" height="1000">
+    </div>
+    <!-- codeexample -->
+    <!--projects-->
+    <div class="makecenter" id="projects" style="padding-top: 1%">
       <h4>4</h4>
-
-      <div>
-        <img class="forimage" src="./assets/images/Code.png" alt="Code Best(best)" width="750">
-
-
-      </div>
-      <!-- codeexample -->
-      <!--projects-->
-      <div class="makecenter" id="projects">
-        <h4>5</h4>
-        <h1>Projects</h1>
-        <p>On my career path "Manual Mobile QA has so many different projects in IT, some of them are under NDA". Let me
-          describe some of them in a few words: PIQ is the Cumbercome Web Plus mobile app for food pre-orders and seat
-          reservations in Germany and the UK. , Sero Health -
-          IOS application for a product that allows remote EMDR therapy.
-          Timber is an IOS app for clients from Belgium and France,
-          the name of the application speaks for itself, ZorkaMobi is a digital agency, Allbry is a Telehealth product
-          and
-          some others are under NDA. As for my steps as a developer, I started with Swift and currently have two
-          projects
-          in progress on github: Happy pig (SpriteKit, UiKit, SwiftUi) - a game about global warming and environmental
-          threats in different countries (located in a private repository) and FunnyWheather(test - assignment for
-          Junior
-          Ios dev position)
-          <a href="https://github.com/DimaKozhanovsky/FunnyWeather">Github </a>
-        </p>
-      </div>
-      <!--./projects-->
-      <div class="makecenter " id="contact">
-        <!---->
-        <h4>5</h4>
-        <h1> Contact </h1>
-        <a href="https://www.linkedin.com/in/dmitrykozhanovski/"> Linkedin</a>
-      </div>
-      <h1> &copy; All rights reserved by Dima Kozhanovski &reg;</h1>
+      <h1>Projects</h1>
+      <p>On my career path "Manual Mobile QA has so many different projects in IT, some of them are under NDA". Let me
+        describe some of them in a few words: PIQ is the Cumbercome Web Plus mobile app for food pre-orders and seat
+        reservations in Germany and the UK. , Sero Health -
+        IOS application for a product that allows remote EMDR therapy.</p>
+      <p>Timber is an IOS app for clients from Belgium and France,
+        the name of the application speaks for itself, ZorkaMobi is a digital agency, Allbry is a Telehealth product
+        and
+        some others are under NDA.</p>
+      <p>As for my steps as a developer, I started with Swift and currently have two
+        projects
+        in progress on github: Happy pig (SpriteKit, UiKit, SwiftUi) - a game about global warming and environmental
+        threats in different countries (located in a private repository) and FunnyWheather(test - assignment for
+        Junior
+        Ios dev position)</p>
+      <p>As for my steps as a developer, I started with Swift and currently have two
+        projects
+        in progress on github: Happy pig (SpriteKit, UiKit, SwiftUi) - a game about global warming and environmental
+        threats in different countries (located in a private repository) and FunnyWheather(test - assignment for
+        Junior
+        Ios dev position)</p>
+      <a href="https://github.com/DimaKozhanovsky/FunnyWeather">Github </a>
+    </div>
+    <!--./projects-->
+    <div class="makecenter " id="contact" style="padding-top: 1%">
+      <!---->
+      <h4>5</h4>
+      <h1> Contact </h1>
+      <a href="https://www.linkedin.com/in/dmitrykozhanovski/"> Linkedin</a>
+    </div>
+    <h1 style="padding-top: 1%"> &copy; All rights reserved by Dima Kozhanovski &reg;</h1>
   </main>
-
-
-
   <script src="./welcome.js"> </script>
-
   <footer class="makecenter footer">
-
   </footer>
-
 </body>
-
 </html>
