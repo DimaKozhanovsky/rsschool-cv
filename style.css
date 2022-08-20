@@ -1019,7 +1019,7 @@ border-radius: 100px;
    left: 0;
 
     z-index: 20;
-    background-color: rgba(222, 107, 245, 0); 
+    background-color: rgb(226, 0, 181); 
     backdrop-filter: blur(1px)
 }
 .upAndDown{
