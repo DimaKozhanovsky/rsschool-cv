@@ -347,6 +347,7 @@ a.active {
     color: deepskyblue;
     margin-right: 20px;
 }
+
 /* about section
 ==================================================*/
 
@@ -806,6 +807,23 @@ fieldset {
 
 /* Responsive media queries
 ==================================================*/
+@media(max-width:1100px){
+    .btn img{
+        width: 120px;
+        height: 120px;
+       
+    }
+    
+    .counter {
+       
+       font-size: 90px; /*  для класса размеры регулируем фонт сайз   */
+      
+
+    } 
+    
+   
+
+}
 
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
@@ -820,22 +838,24 @@ fieldset {
     
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .timeline-event-copy {
         width: 90%;
         left: 2em;
     }
      .btn img {
-        width: 40px;
-        height: 40px;  
+        width: 90px;
+        height: 90px;  
     }
    
     .counter {
         
-        font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
+        font-size: 60px; /*  для класса размеры регулируем фонт сайз   */
+       
        
  
      } 
+    
      .forimage{
         width: 100%;
         height: 400px;
@@ -867,26 +887,14 @@ fieldset {
     }
    
     .counter {
-        font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
+        font-size: 60px; /*  для класса размеры регулируем фонт сайз   */
     
      } 
+     
 }
 
 
-@media(max-width:1100px){
-    .btn img{
-        width: 120px;
-        height: 120px;
-       
-    }
-    .counter {
-       
-       font-size: 120px; /*  для класса размеры регулируем фонт сайз   */
-      
 
-    } 
-
-}
 @media (max-width: 420px) {
     nav li {
         margin: 6px;
@@ -901,16 +909,17 @@ fieldset {
     
     }
     .btn img{
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
        
     }
     .counter {
        
-       font-size: 30px; /*  для класса размеры регулируем фонт сайз   */
+       font-size: 60px; /*  для класса размеры регулируем фонт сайз   */
       
 
     } 
+   
 }
 .imageOnImage{
     position: absolute; /*  вылетет из потока и ищет предка если   */

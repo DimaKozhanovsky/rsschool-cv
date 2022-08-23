@@ -11,23 +11,26 @@ function catchLike() {
 }
 
 const btn = document.querySelector('.btn');
-const counter = document.querySelector('.counter span');
+const counter = document.querySelector('.counter span'); //?
 const enlarge = document.querySelector('.enlarge');
-
 let counterState = 0
-const myStorage = window.localStorage.getItem("likeCounter");
-if (myStorage) {
-  counterState = Number(myStorage);
+const myStorage = window.localStorage.getItem("likeCounter"); // если есть нет до достаем 
+if (myStorage) {  // если он null  то не зайдет 
+  counterState = Number(myStorage); // из строки в чиисо 
   console.log(myStorage);
 }
 
 const setState = () => {
-  counter.textContent = counterState;
-  window.localStorage.setItem("likeCounter", counterState.toString());
+  counter.textContent = counterState; // задаем текствое содержимае '.counter span
+  window.localStorage.setItem("likeCounter", counterState.toString()); // добавляем новое ключ и значение 
 }
 
 btn.addEventListener('click', (event) => { 
-  counterState += 1
+  counterState += 1 ;
+// if (counter) > 100 counter.classList.remove("counter");
+    
+//  }
+  
   enlarge.classList.add('pss')
 
   setState()
@@ -38,6 +41,7 @@ enlarge.addEventListener('transitionend', () => {
   enlarge.classList.remove('pss')
 })
 setState()
+
 
 
 
