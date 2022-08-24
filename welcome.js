@@ -15,6 +15,7 @@ const counter = document.querySelector('.counter span'); //?
 const enlarge = document.querySelector('.enlarge');
 let counterState = 0
 const myStorage = window.localStorage.getItem("likeCounter"); // если есть нет до достаем 
+const newImage = document.querySelector(`#test1`);
 if (myStorage) {  // если он null  то не зайдет 
   counterState = Number(myStorage); // из строки в чиисо 
   console.log(myStorage);
@@ -22,6 +23,7 @@ if (myStorage) {  // если он null  то не зайдет
 
 const setState = () => {
   counter.textContent = counterState; // задаем текствое содержимае '.counter span
+  console.log(newImage) ;
   window.localStorage.setItem("likeCounter", counterState.toString()); // добавляем новое ключ и значение 
 }
 
@@ -30,22 +32,22 @@ btn.addEventListener('click', (event) => {
 // if (counter) > 100 counter.classList.remove("counter");
     
 //  }
-  
-  enlarge.classList.add('pss')
+  // спросить про тогл тогл это ка будто события нет не лучшийвариант нарушение mvc
+  enlarge.classList.add('pss');
+ newImage.classList.add(`pss`);
 
   setState()
   console.log(event)
 })
 
+// newImage.addEventListener(`transitioned`, ()=> {
+// })
+
 enlarge.addEventListener('transitionend', () => {
-  enlarge.classList.remove('pss')
+  enlarge.classList.remove('pss');
+  newImage.classList.remove('pss'); 
 })
 setState()
-
-
-
-
-
 
 // 41-43описан и храгнится в web api 46-49  
  // иницализация ( событие выпониться только когда я кликну на кнопку)
