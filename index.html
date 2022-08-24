@@ -30,21 +30,22 @@
   <!-- header -->
   <div class="bg-image bigConteiner "> </div>
   <header>
-
-    <nav>
-      <ul>
+<div >
+    <nav >
+      <ul  >
         <!-- What is anhor targets Anchor targets 
 Anchor target to navigate within the same page. By prepending your href with #, you can target an HTML element with a specific id attribute.
 
 For example, <a href="#footer"> will navigate to the <div id="footer"> within the same HTML document. This type of href is often used to navigate back to the top of the page.
 -->
-        <li><a href="#about">About</a></li>
+        <li ><a href="#about">About</a></li>
         <li><a href="#experience">experience</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#contact">contact</a></li>
         <li><a href="#codeexample">codeexample</a></li>
       </ul>
     </nav>
+</div>
   </header>
   <main class="container">
     <!--мейн основое содержимое -->
@@ -63,7 +64,7 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
 
       <h1> Dima Kozhanovski </h1>
 
-      <h2>QA automation &<br /> Junior Ios &<br /> Junior JS</h2>
+      <h1> QA automation &<br /> Junior Ios &<br /> Junior JS</h1>
 
 
       <div class="imageOnImage">
@@ -72,14 +73,14 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
             <img src="./assets/images/Like.png" alt="Like">
           </button>
         </div>
-        <div class="enlarge changeSizeFont ">
-          <div class="counter "> <span>
+        <div class="enlarge">
+          <div class="counter"> <span>
             </span>
           </div>
         </div>
       </div>
-      <div class="photoclass">
-        <img src="./assets/images/3.png" alt="The best future employee">
+      <div class="photoclass enlarge ">
+        <img src="./assets/images/3.png" id = "test1" alt="The best future employee">
 
       </div>
       <div class="makecenter" id="about">
@@ -179,7 +180,7 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
 
       <p style="margin: 15px" class="paragrafmodify">
         <!-- каждый тег как блок -->
-        Bouncer("Admiral Company" -Casino")
+        Bouncer("Admiral Company" - Casino)
         April 2017 — september 2020
         Guest safety, conflict resolution, cashing out slot machines
         Location : Minsk
@@ -226,18 +227,20 @@ For example, <a href="#footer"> will navigate to the <div id="footer"> within th
         threats in different countries (located in a private repository) and FunnyWheather(test - assignment for
         Junior
         Ios dev position)</p>
-
+          <div class="forLink">
       <a href="https://github.com/DimaKozhanovsky/FunnyWeather">Github </a>
-
+          </div>
     </div>
     <!--./projects-->
     <div class="makecenter " id="contact" style="padding-top: 1%">
       <!---->
       <h4>5</h4>
       <h1> Contact </h1>
-      <a href="https://www.linkedin.com/in/dmitrykozhanovski/"> Linkedin</a>
+      <div class="forLink" >
+      <a href="https://www.linkedin.com/in/dmitrykozhanovski/" > Linkedin</a>
     </div>
-    <h1 style="padding-top: 1%"> &copy; All rights reserved by Dima Kozhanovski &reg;</h1>
+    </div>
+    <h1 id="temp" style="padding-top: 1%"> &copy; <br/> All rights reserved by Dima Kozhanovski <br/> &reg; </h1>
   </main>
 
 

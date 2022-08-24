@@ -1,6 +1,19 @@
-
+@font-face {
+    font-family: "Montez"; /* через точку надо не через  css не больше чем 200 строк js - 150 -200 слеш*/
+    font-weight :400px; 
+    src: url("./Montez-Regular.ttf") format("opentype")
+         
+    /* забирает первый который броузер может поддержать  может быть много */         
+   }
+   @font-face {
+    font-family: "DynaPuff-VariableFont_wdthwgh"; /* через точку надо не через  css не больше чем 200 строк js - 150 -200 слеш*/
+    font-weight :400px; 
+    src: url("./DynaPuff-VariableFont_wdthwght.ttf") format("opentype")
+    /* забирает первый который броузер может поддержать  может быть много */         
+   }
 *{   /* The image used * боксайзиг бордеобокс обязатедьно!!! или все стили можно ложить в мустрку */
-    font-family: fantasy;
+    font-family: Montez ;
+  
 
 }
 
@@ -39,8 +52,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
 
-/*
-font-family: 'Playfair Display', serif;
+/*font
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
@@ -57,10 +69,11 @@ h1 {
 }
 
 p{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'DynaPuff-VariableFont_wdthwgh', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/* typography
+    ================================================== последний это набор шрифтов выбирается по очерди с первого р*/
 }
 h4 {
-    font-family:monospace;
+    font-family:"DynaPuff-VariableFont_wdthwgh";
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
@@ -89,7 +102,7 @@ before after and sp forth it is fake elements
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family:'DynaPuff-VariableFont_wdthwgh','Montez','Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
 }
@@ -171,6 +184,24 @@ h5{
     animation: wink 1s ease-in-out infinite alternate
 }
 
+
+
+@media only screen and (min-width:1200px) {
+    .preloader {
+        height: 60px;
+        width: 60px;
+        margin-top: -30px;
+        margin-left: -30px
+    }
+    .preloader>.icon {
+        height: 50px;
+        width: 21.2px;
+        margin-top: -25px;
+        margin-left: -10.6px
+    }
+    
+
+}
 @media only screen and (min-width:768px) { 
     .preloader {
         height: 60px;
@@ -190,23 +221,6 @@ h5{
         margin-left: -7.95px
     }
    
-
-}
-
-@media only screen and (min-width:1200px) {
-    .preloader {
-        height: 60px;
-        width: 60px;
-        margin-top: -30px;
-        margin-left: -30px
-    }
-    .preloader>.icon {
-        height: 50px;
-        width: 21.2px;
-        margin-top: -25px;
-        margin-left: -10.6px
-    }
-    
 
 }
 
@@ -284,7 +298,7 @@ nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #444;
-    font-size: 11px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -382,7 +396,7 @@ a.active {
 }
 
 .experience-row h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'DynaPuff-VariableFont_wdthwgh','Montez','Lato', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
     color: #425BB5;
@@ -670,7 +684,7 @@ a.active {
 }
 
 .modal-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'DynaPuff-VariableFont_wdthwgh','Montez', 'Playfair Display', serif;
     font-size: 40px;
     line-height: 50px;
 }
@@ -679,9 +693,10 @@ a.active {
 /* contact
 ==================================================*/
 
-#contact {
+#contact { /* never uses id !!!!!! id only for document  improve it during splitting ( delete ides*/
     padding: 100px 0;
-    background: #f3f3f3
+    background: #f3f3f3 ;
+    text-align: center;
 }
 
 #contact-form input,
@@ -866,7 +881,7 @@ fieldset {
 
 @media (max-width: 500px) {
     h1 {
-        font-family: 'Playfair Display', serif;
+        font-family:'DynaPuff-VariableFont_wdthwgh','Montez','Playfair Display', serif;
         font-size: 50px;
         line-height: 50px;
     }
@@ -944,6 +959,7 @@ animation-delay: 5s ;
 animation-iteration-count:infinite;
 text-align: center;
 border-radius: 100px;
+font-family: DynaPuff-VariableFont_wdthwgh ;
 }
     
 
@@ -964,7 +980,8 @@ border-radius: 100px;
 }
 .paragrafmodify{
     text-align:start;
-    font-family: fantasy;
+    font-family: DynaPuff-VariableFont_wdthwgh ;
+    font-size: 20px;
     
 }
 .container{
@@ -996,7 +1013,7 @@ border-radius: 100px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: fantasy;
+  font-family: Montez;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -1039,7 +1056,7 @@ border-radius: 100px;
 }
 
 .upAndDown:hover{
-    animation: glide 0.2s ease-in-out alternate infinite ;
+    animation: glide 0.2s ease-in-out alternate infinite ; /*  на мобилках ховер держится в месте нажатия ,  решение прорисать разные ивенты в скрипте для мобилы */
     -webkit-animation:glide 0.2s ease-in-out alternate infinite; 
     
 
@@ -1060,4 +1077,10 @@ border-radius: 100px;
 }
 .pss{
     transform: scale(1.4); 
+}
+#temp{
+text-align: center;
+}
+.forLink{
+    font-size: 40px;
 }
