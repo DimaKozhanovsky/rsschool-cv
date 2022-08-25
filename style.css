@@ -897,8 +897,8 @@ fieldset {
         margin: 10px 0;
     }
       .btn img{
-        width: 40px;
-        height: 40px;
+        width: 70px;
+        height: 70px;
     }
    
     .counter {
@@ -1045,7 +1045,7 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
    left: 0;
 
     z-index: 20;
-    background-color: rgb(226, 0, 181); 
+    background-color: rgb(243, 239, 242); 
     backdrop-filter: blur(1px)
 }
 .upAndDown{
@@ -1078,9 +1078,15 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
 .pss{
     transform: scale(1.4); 
 }
+.enlarge2{
+    transition: all 0.2s ease-in-out;
+}
 #temp{
 text-align: center;
 }
 .forLink{
     font-size: 40px;
+}
+.makecenter .twoimages{
+    display: none;
 }
