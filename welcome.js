@@ -13,6 +13,7 @@ function catchLike() {
 const btn = document.querySelector('.btn');
 const counter = document.querySelector('.counter span'); //?
 const enlarge = document.querySelector('.enlarge');
+const enlarge2 = document.querySelector('.enlarge2');
 let counterState = 0
 const myStorage = window.localStorage.getItem("likeCounter"); // если есть нет до достаем 
 const newImage = document.querySelector(`#test1`);
@@ -35,17 +36,21 @@ btn.addEventListener('click', (event) => {
   // спросить про тогл тогл это ка будто события нет не лучшийвариант нарушение mvc
   enlarge.classList.add('pss');
  newImage.classList.add(`pss`);
+ enlarge2.classList.add('pss');
 
   setState()
   console.log(event)
 })
 
-// newImage.addEventListener(`transitioned`, ()=> {
-// })
+
+enlarge2.addEventListener('transitionend',() => {
+  newImage.classList.remove('pss');  // как только транзишион закнчивается удаляется класс с увелечнеим картинки pss
+  enlarge2.classList.remove('pss')// для класаа enlarge 2  переход длится дольше 
+})
 
 enlarge.addEventListener('transitionend', () => {
   enlarge.classList.remove('pss');
-  newImage.classList.remove('pss'); 
+  
 })
 setState()
 
