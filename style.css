@@ -105,6 +105,7 @@ body {
     font-family:'DynaPuff-VariableFont_wdthwgh','Montez','Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    overflow: hidden;
 }
 
 h5{
@@ -993,10 +994,16 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
    
 }
 .demo {
-    position: relative;
+    overflow:  hidden;
     z-index: 30;
-    position: relative;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate( -50%);
     text-align: center;
+    
+    
+    
 }
 
 .footer {
@@ -1006,7 +1013,7 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
 
 /* CSS */
 .button-1 {
-  background-color: #EA4C89;
+  background-color: deepskyblue;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -1031,10 +1038,38 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
+.button-12 {
+    background-color: ;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montez;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+.button-12{
+    background-color: deepskyblue;
+}
 .button-1,
 .button-1:focus {
-  background-color: #F082AC;
+  background-color: red;
 }
 .bigConteiner {
  
@@ -1045,7 +1080,7 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
    left: 0;
 
     z-index: 20;
-    background-color: rgb(243, 239, 242); 
+    background-color: rgb(239, 241, 243); 
     backdrop-filter: blur(1px)
 }
 .upAndDown{
@@ -1079,7 +1114,7 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
     transform: scale(1.4); 
 }
 .enlarge2{
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 #temp{
 text-align: center;
