@@ -1001,7 +1001,7 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
     left: 50%;
     transform: translate( -50%);
     text-align: center;
-    
+    margin: 0 auto ;
     
     
 }
