@@ -1079,7 +1079,7 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
     transform: scale(1.4); 
 }
 .enlarge2{
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 #temp{
 text-align: center;
