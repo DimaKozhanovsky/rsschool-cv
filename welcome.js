@@ -1,7 +1,8 @@
 
 function myFunction() {
   document.querySelector('.bg-image').remove();
-  document.querySelector('.demo').remove()
+  document.querySelector('.demo').remove();
+  document.body.style.overflow = "scroll";
 }
 function myNoFunction() {
   window.location = "https://github.com/DimaKozhanovsky"
