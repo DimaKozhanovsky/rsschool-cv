@@ -1087,8 +1087,7 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
     background-color: rgb(253, 254, 255); 
     backdrop-filter: blur(1px);
     background-color:rgb(253, 254, 255) ;
-     max-width: 2900px;
-     max-height: 1900px;
+    
 }
 .upAndDown{
     width:40px;

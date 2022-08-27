@@ -16,12 +16,14 @@ const counter = document.querySelector('.counter span'); //?
 const enlarge = document.querySelector('.enlarge');
 const enlarge2 = document.querySelector('.enlarge2');
 let counterState = 0
+const sound = document.querySelector('.audio');
 const myStorage = window.localStorage.getItem("likeCounter"); // если есть нет до достаем 
 const newImage = document.querySelector(`#test1`);
 if (myStorage) {  // если он null  то не зайдет 
   counterState = Number(myStorage); // из строки в чиисо 
   console.log(myStorage);
 }
+
 
 const setState = () => {
   counter.textContent = counterState; // задаем текствое содержимае '.counter span
@@ -34,7 +36,9 @@ btn.addEventListener('click', (event) => {
 // if (counter) > 100 counter.classList.remove("counter");
     
 //  }
-  // спросить про тогл тогл это ка будто события нет не лучшийвариант нарушение mvc
+
+ 
+// спросить про тогл тогл это ка будто события нет не лучшийвариант нарушение mvc
   enlarge.classList.add('pss');
  newImage.classList.add(`pss`);
  enlarge2.classList.add('pss');
