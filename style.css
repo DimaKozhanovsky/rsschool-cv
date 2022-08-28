@@ -1,37 +1,39 @@
 @font-face {
     font-family: "Montez"; /* через точку надо не через  css не больше чем 200 строк js - 150 -200 слеш*/
-    font-weight :400px; 
+    font-weight: 400px;
     src: url("./Montez-Regular.ttf") format("opentype")
-         
-    /* забирает первый который броузер может поддержать  может быть много */         
-   }
-   @font-face {
+
+    /* забирает первый который броузер может поддержать  может быть много */
+}
+
+@font-face {
     font-family: "DynaPuff-VariableFont_wdthwgh"; /* через точку надо не через  css не больше чем 200 строк js - 150 -200 слеш*/
-    font-weight :400px; 
+    font-weight: 400px;
     src: url("./DynaPuff-VariableFont_wdthwght.ttf") format("opentype")
-    /* забирает первый который броузер может поддержать  может быть много */         
-   }
-*{   /* The image used * боксайзиг бордеобокс обязатедьно!!! или все стили можно ложить в мустрку */
-    font-family: Montez ;
-  
+    /* забирает первый который броузер может поддержать  может быть много */
+}
+
+* { /* The image used * боксайзиг бордеобокс обязатедьно!!! или все стили можно ложить в мустрку */
+    font-family: Montez;
+
 
 }
 
-.bg-image {
-    /* Add the blur effect * можно использовать бекдроп фильтр*/
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    
-  }
+/*.bg-image {*/
+/*    !* Add the blur effect * можно использовать бекдроп фильтр*!*/
+/*    filter: blur(8px);*/
+/*    -webkit-filter: blur(8px);*/
+/*  */
+/*    !* Full height *!*/
+/*    height: 100%;*/
+/*  */
+/*    !* Center and scale the image nicely *!*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    z-index: -1;*/
+/*    */
+/*  }*/
 /* Table of Content
 ==================================================
 	- Google fonts & font family -
@@ -64,25 +66,28 @@ font-family: 'Open Sans', sans-serif;
 
 
 h1 {
-   
+
     font-size: 80px;
     line-height: 70px;
 }
 
-p{
-    font-family: 'DynaPuff-VariableFont_wdthwgh', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/* typography
-    ================================================== последний это набор шрифтов выбирается по очерди с первого р*/
+p {
+    font-family: 'DynaPuff-VariableFont_wdthwgh', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* typography
+        ================================================== последний это набор шрифтов выбирается по очерди с первого р*/
 }
+
 h4 {
-    font-family:"DynaPuff-VariableFont_wdthwgh";
+    font-family: "DynaPuff-VariableFont_wdthwgh";
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
     color: #000000;
     margin-left: 40px;
-    margin-right:40px ;
+    margin-right: 40px;
     font-weight: 700;
 }
+
 /*
 before after and sp forth it is fake elements  
 */
@@ -103,16 +108,16 @@ before after and sp forth it is fake elements
 
 
 body {
-    font-family:'DynaPuff-VariableFont_wdthwgh','Montez','Open Sans', sans-serif;
+    font-family: 'DynaPuff-VariableFont_wdthwgh', 'Montez', 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
-h5{
-  
-    Bottom :20px;
-    }
+h5 {
+
+    Bottom: 20px;
+}
 
 .size-50 {
     font-size: 50px;
@@ -152,7 +157,7 @@ h5{
     margin: -50px 0 0 -50px
 }
 
-.preloader {o
+.preloader {
     height: 40px;
     width: 40px;
     margin-top: -20px;
@@ -174,7 +179,7 @@ h5{
     border-radius: 100%
 } */
 
-.preloader>.icon {
+.preloader > .icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -187,42 +192,44 @@ h5{
 }
 
 
-
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width: 1200px) {
     .preloader {
         height: 60px;
         width: 60px;
         margin-top: -30px;
         margin-left: -30px
     }
-    .preloader>.icon {
+
+    .preloader > .icon {
         height: 50px;
         width: 21.2px;
         margin-top: -25px;
         margin-left: -10.6px
     }
-    
+
 
 }
-@media only screen and (min-width:768px) { 
+
+@media only screen and (min-width: 768px) {
     .preloader {
         height: 60px;
         width: 60px;
         margin-top: -30px;
         margin-left: -30px
     }
+
     /* .preloader:before {
         left: -2px;
         top: -2px;
         border-width: 2px
     } */
-    .preloader>.icon {
+    .preloader > .icon {
         height: 37.5px;
         width: 15.9px;
         margin-top: -18.75px;
         margin-left: -7.95px
     }
-   
+
 
 }
 
@@ -347,18 +354,19 @@ a.active {
     height: 100vh;
 }
 
-.btn{
-    
-    outline: none !important; 
+.btn {
+
+    outline: none !important;
     background-color: white;
-    border-color:white ;
+    border-color: white;
     border-width: 0px;
     margin-left: 20px;
 
-   
+
 }
-.counter{ 
-   line-height: normal;
+
+.counter {
+    line-height: normal;
     font-size: 275px;
     color: deepskyblue;
     margin-right: 20px;
@@ -368,11 +376,11 @@ a.active {
 ==================================================*/
 
 
-
 .about-img-div img {
     margin: 0 auto;
 }
-/* 
+
+/*
 .about-border {
     position: absolute;
     border: 10px solid #425BB5;
@@ -388,7 +396,7 @@ a.active {
 ==================================================*/
 
 #experience {
-   padding-top: 40px;
+    padding: 100px 0;
     background: #f3f3f3
 }
 
@@ -398,7 +406,7 @@ a.active {
 }
 
 .experience-row h3 {
-    font-family: 'DynaPuff-VariableFont_wdthwgh','Montez','Lato', sans-serif;
+    font-family: 'DynaPuff-VariableFont_wdthwgh', 'Montez', 'Lato', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
     color: #425BB5;
@@ -686,7 +694,7 @@ a.active {
 }
 
 .modal-content h2 {
-    font-family: 'DynaPuff-VariableFont_wdthwgh','Montez', 'Playfair Display', serif;
+    font-family: 'DynaPuff-VariableFont_wdthwgh', 'Montez', 'Playfair Display', serif;
     font-size: 40px;
     line-height: 50px;
 }
@@ -697,7 +705,7 @@ a.active {
 
 #contact { /* never uses id !!!!!! id only for document  improve it during splitting ( delete ides*/
     padding: 100px 0;
-    background: #f3f3f3 ;
+    background: #f3f3f3;
     text-align: center;
 }
 
@@ -824,23 +832,20 @@ fieldset {
 
 /* Responsive media queries
 ==================================================*/
-@media(max-width:1100px){
-    .btn img{
-        width: 140px;
-        height: 140px;
-        padding-left: 100px;
-       
-    }
-    
-    .counter {
-       
-       font-size: 140px; /*  для класса размеры регулируем фонт сайз   */
-      padding-right: 100px;
+@media (max-width: 1100px) {
+    .btn img {
+        width: 120px;
+        height: 120px;
 
-    } 
-    
-    
-   
+    }
+
+    .counter {
+
+        font-size: 90px; /*  для класса размеры регулируем фонт сайз   */
+
+
+    }
+
 
 }
 
@@ -848,22 +853,14 @@ fieldset {
     .portfolio .categories-grid .categories ul li a {
         padding: 0 2px;
     }
-    .btn img {
-        width: 95px;
-        height: 95px;
-     }
-    
 }
-@media (max-width: 768px){
-    .gifformobile{
-        size: 50px 50px;
 
+@media (max-width: 768px) {
+    .gifformobile {
+        size: 50px 50px;
     }
-    .btn img {
-        width: 50px;
-        height: 50px;
-     }
-     
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -871,199 +868,177 @@ fieldset {
         width: 90%;
         left: 2em;
     }
-     .btn img {
-        width: 80px;
-        height: 80px;  
-        padding-left: 40px;
+
+    .btn img {
+        width: 90px;
+        height: 90px;
     }
-   
+
     .counter {
-        
+
         font-size: 60px; /*  для класса размеры регулируем фонт сайз   */
-       padding-right: 40px;
-       
- 
-     } 
-    
-     .forimage{
+
+
+    }
+
+    .forimage {
         width: 100%;
         height: 400px;
-        
-        
-     }
-     .aboutme{
-        padding-top: 200px;
-        padding-bottom: 20px;
+        border-radius: 40px;
+
     }
 }
 
 @media (max-width: 500px) {
     h1 {
-        
+        font-family: 'DynaPuff-VariableFont_wdthwgh', 'Montez', 'Playfair Display', serif;
         font-size: 50px;
         line-height: 50px;
     }
+
     #home,
     .disply-table {
         height: 600px;
     }
+
     .about-border {
         width: 265px;
     }
+
     .portfolio .categories-grid .categories ul li {
         list-style: none;
         margin: 10px 0;
     }
-      .btn img{
-        width: 85px;
-        height: 85px;
-        padding-left: 30px;
+
+    .btn img {
+        width: 70px;
+        height: 70px;
     }
-   
+
     .counter {
         font-size: 60px; /*  для класса размеры регулируем фонт сайз   */
-        padding-right: 30px;
-     } 
-     
-}
 
+    }
+
+}
 
 
 @media (max-width: 420px) {
     nav li {
         margin: 6px;
     }
+
     nav li a {
         font-size: 10px;
     }
 
-    .forimage{
-        width:100% ;
+    .forimage {
+        width: 100%;
         display: block;
-    
-    }
-    .btn img{
-        width: 80px;
-        height: 80px;
-        padding-left: 30px;
-       
-    }
-    .counter {
-       
-       font-size: 60px; /*  для класса размеры регулируем фонт сайз   */
-       padding-right: 30px;
 
-    } 
-   
+    }
+
+    .btn img {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .counter {
+
+        font-size: 60px; /*  для класса размеры регулируем фонт сайз   */
+
+
+    }
+
 }
 
-
-.imageOnImage{
+.imageOnImage {
     position: absolute; /*  вылетет из потока и ищет предка если   */
-    
+
     width: 100%;
     left: 0;
     align-items: baseline;
-    display:flex;
-    margin : 0 auto;
+    display: flex;
+    margin: 0 auto;
     justify-content: space-between;
     /* border: solid 2px #425BB5;
     border-color: #425BB5;
     border-width: 15px; */
-   
 
-    
+
 }
+
 .makecenter {
-position: relative; /* дети в контейнере если делать позишн абсолют то они будут отталкивать от этого большого дива */
-animation: rotation 12s  ;
-animation-delay: 5s ;
-animation-iteration-count:infinite;
-text-align: center;
-border-radius: 1px;
-font-family: DynaPuff-VariableFont_wdthwgh ;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative; /* дети в контейнере если делать позишн абсолют то они будут отталкивать от этого большого дива */
+    animation: rotation 12s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    border-radius: 100px;
+    font-family: DynaPuff-VariableFont_wdthwgh;
 }
-    
 
-.photoclass{
-    
+
+.photoclass {
+
     width: 100%;
     max-width: 1000px;
     height: 100%;
-    max-height: 400px;
+    /*max-height: 400px;*/
     margin: 0 auto;
-    
+
 
 }
-.photoclass img{
+
+.photoclass img {
     max-width: 100%;
     max-height: 100%;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
-.paragrafmodify{
-    text-align:start;
-    font-family: DynaPuff-VariableFont_wdthwgh ;
+
+.paragrafmodify {
+    text-align: start;
+    font-family: DynaPuff-VariableFont_wdthwgh;
     font-size: 20px;
-    
+
 }
-.container{
-    
-   
+
+.container {
     padding: 20px;
-   
-  
-   
 }
+
 .demo {
-    overflow:  hidden;
-    z-index: 30;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate( -50%);
+    /*overflow: hidden;*/
+    /*z-index: 30;*/
+    /*position: absolute;*/
+    /*top: 20%;*/
+    /*left: 50%;*/
+    /*transform: translate( -50%);*/
+    max-height: 100vh;
     text-align: center;
-    margin: 0 auto ;
-    
+    margin: 0 auto;
+    height: 40vh;
+    width: 40vh;
+    margin-top: 20vh;
+
 }
-.demo img{
+
+.demo img {
     display: block;
     margin: 0 auto;
 }
 
 .footer {
-  left: 0;
-  bottom: 0;
+    left: 0;
+    bottom: 0;
 }
 
 /* CSS */
 .button-1 {
-  background-color: deepskyblue;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Montez;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-.button-12 {
-    background-color: ;
+    background-color: deepskyblue;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
@@ -1087,77 +1062,129 @@ font-family: DynaPuff-VariableFont_wdthwgh ;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-.button-12{
+}
+
+.button-12 {
+    /*background-color: ;*/
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montez;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-12 {
     background-color: deepskyblue;
 }
+
 .button-1,
 .button-1:focus {
-  background-color: red;
+    background-color: red;
 }
+
+
 .bigConteiner {
- 
-   position: fixed;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
+
+    /*position: fixed;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 
     z-index: 20;
-    background-color: rgb(253, 254, 255); 
+    background-color: rgb(253, 254, 255);
     backdrop-filter: blur(1px);
-    background-color:rgb(253, 254, 255) ;
-    
-}
-.upAndDown{
-    width:40px;
-    height:40px;
-    position:relative;
-   
-}
-
-.upAndDown:hover{
-    animation: glide 0.2s ease-in-out alternate infinite ; /*  на мобилках ховер держится в месте нажатия ,  решение прорисать разные ивенты в скрипте для мобилы */
-    -webkit-animation:glide 0.2s ease-in-out alternate infinite; 
-    
+    background-color: rgb(253, 254, 255);
 
 }
+
+.upAndDown {
+    width: 40px;
+    height: 40px;
+    position: relative;
+
+}
+
+.upAndDown:hover {
+    animation: glide 0.2s ease-in-out alternate infinite; /*  на мобилках ховер держится в месте нажатия ,  решение прорисать разные ивенты в скрипте для мобилы */
+    -webkit-animation: glide 0.2s ease-in-out alternate infinite;
+
+
+}
+
 @keyframes glide {
-    from {left:0px; top:-20px;}
+    from {
+        left: 0px;
+        top: -20px;
+    }
 
-    to {left:0px; top:10px;}
+    to {
+        left: 0px;
+        top: 10px;
+    }
 }
 
 @-webkit-keyframes glide {
-    from {left:0px; top:0px;}
-    to {left:0px; top:20px;}
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 0px;
+        top: 20px;
+    }
 }
-.enlarge{
+
+.enlarge {
     transition: all .000001s ease-in-out;
-    
+
 }
-.pss{
-    transform: scale(1.4); 
+
+.pss {
+    transform: scale(1.4);
 }
-.enlarge2{
-    transition: all 0.3s ease-in-out;
+
+.enlarge2 {
+    transition: all 0.05s ease-in-out;
 }
-#temp{
-text-align: center;
+
+#temp {
+    text-align: center;
 }
-.forLink{
+
+.forLink {
     font-size: 40px;
 }
-.makecenter .twoimages{
+
+.makecenter .twoimages {
     display: none;
 }
-.initialInfo{
-    padding-top: 65px;
+
+.ds_none{
+    display: none;
 }
-.aboutme{
-   padding-top: 200px;
-    padding-bottom: 20px;
+.ds_demo_none{
+    display: none;
 }
-#test1{
-   padding-bottom: 100px; 
+.main_title{
+    margin: 0 auto;
+    text-align: center;
 }

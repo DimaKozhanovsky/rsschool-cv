@@ -1,22 +1,38 @@
 
+
+const btn_red = document.querySelector('.button-1')
+const btn_blue = document.querySelector('.button-12')
+const demo = document.querySelector('.demo')
+const main_conteiner = document.querySelector('.container')
+
+btn_red.addEventListener('click', myFunction)
+btn_blue.addEventListener('click', myNoFunction)
+
+
 function myFunction() {
-  document.querySelector('.bg-image').remove();
-  document.querySelector('.demo').remove();
+    console.log("check")
+    demo.classList.toggle( 'ds_demo_none' );
+    main_conteiner.classList.toggle( 'ds_none' )
+
+  // document.querySelector('.ds_none').remove();
+  // document.querySelector('.demo').remove();
   document.body.style.overflow = "scroll";
 }
 function myNoFunction() {
   window.location = "https://github.com/DimaKozhanovsky"
 }
+
 function catchLike() {
   document.querySelectorAll('.btn')  
 }
+
 
 const btn = document.querySelector('.btn');
 const counter = document.querySelector('.counter span'); //?
 const enlarge = document.querySelector('.enlarge');
 const enlarge2 = document.querySelector('.enlarge2');
 let counterState = 0
-const sound = document.querySelector('.audio');
+const sound = new Audio("./assets/images/coin.mp3");
 const myStorage = window.localStorage.getItem("likeCounter"); // если есть нет до достаем 
 const newImage = document.querySelector(`#test1`);
 if (myStorage) {  // если он null  то не зайдет 
@@ -42,7 +58,7 @@ btn.addEventListener('click', (event) => {
   enlarge.classList.add('pss');
  newImage.classList.add(`pss`);
  enlarge2.classList.add('pss');
-
+   sound.play()
   setState()
   console.log(event)
 })
