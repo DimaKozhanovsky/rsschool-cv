@@ -1,13 +1,13 @@
 
 
-const btn_red = document.querySelector('.button-1')
-const btn_blue = document.querySelector('.button-12')
-const demo = document.querySelector('.demo')
-const main_conteiner = document.querySelector('.container')
+const btn_red = document.querySelector('.button-1');
+const btn_blue = document.querySelector('.button-12');
+const demo = document.querySelector('.demo');
+const main_conteiner = document.querySelector('.container');
+
 
 btn_red.addEventListener('click', myFunction)
 btn_blue.addEventListener('click', myNoFunction)
-
 
 function myFunction() {
     console.log("check")
@@ -16,16 +16,21 @@ function myFunction() {
 
   // document.querySelector('.ds_none').remove();
   // document.querySelector('.demo').remove();
-  document.body.style.overflow = "scroll";
+  document.body.style.overflow = "scroll";//добовляем тег артибут и свойства 
+  ScrollToTarget()
+  
 }
 function myNoFunction() {
   window.location = "https://github.com/DimaKozhanovsky"
 }
 
+
 function catchLike() {
   document.querySelectorAll('.btn')  
 }
-
+function ScrollToTarget() {
+  document.querySelector('#test1').scrollIntoView({block: "center", behavior: "smooth"});
+}
 
 const btn = document.querySelector('.btn');
 const counter = document.querySelector('.counter span'); //?
