@@ -78,8 +78,8 @@ enlarge.addEventListener('transitionend', () => {
   enlarge.classList.remove('pss');
   
 })
-setState()
-
+setState() // функции вызывать снаружи в type model
+//  в функции нельзя создавать лисенеры 
 // 41-43описан и храгнится в web api 46-49  
  // иницализация ( событие выпониться только когда я кликну на кнопку)
 // ПОЧИТАТЬ РЕДАКС
