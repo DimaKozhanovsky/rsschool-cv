@@ -898,8 +898,11 @@ fieldset {
     margin: 0 auto;
     height: 40vh;
     width: 40vh;
-    margin-top: 20vh;
+    margin-top: 13vh;
 
+}
+.mainp{
+    padding-bottom: 40px;
 }
 
 .demo img {
@@ -911,10 +914,18 @@ fieldset {
     left: 0;
     bottom: 0;
 }
+.twobuttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
 
-/* CSS */
+    
+
+
 .button-1 {
-    background-color: deepskyblue;
+    background-color: red;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
@@ -922,7 +933,7 @@ fieldset {
     cursor: pointer;
     display: inline-block;
     font-family: Montez;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     height: 40px;
     line-height: 20px;
@@ -949,7 +960,7 @@ fieldset {
     cursor: pointer;
     display: inline-block;
     font-family: Montez;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     height: 40px;
     line-height: 20px;
@@ -968,18 +979,13 @@ fieldset {
    
 
 }
-/* .twobuttons{
-    margin-left: 40px;
-} */
+
 
 .button-12 {
     background-color: deepskyblue;
 }
 
-.button-1,
-.button-1:focus {
-    background-color: red;
-}
+
 
 
 .bigConteiner {
