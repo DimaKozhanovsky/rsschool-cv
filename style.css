@@ -1259,6 +1259,15 @@ fieldset {
     
     
         }
-        
+        .arrow{
+            padding-left: 56px;
+            padding-top: 75px;
+        }
+            
+        .arrow > span{
+            width: 2px;
+            height: 2px;
+            
+        }
     
     }
