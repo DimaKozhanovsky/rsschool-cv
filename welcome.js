@@ -1,4 +1,4 @@
-
+'use strict'
 
 const btn_red = document.querySelector('.button-1');
 const btn_blue = document.querySelector('.button-12');
@@ -37,7 +37,7 @@ const counter = document.querySelector('.counter span'); //?
 const enlarge = document.querySelector('.enlarge');
 const enlarge2 = document.querySelector('.enlarge2');
 let counterState = 0
-const sound = new Audio("./assets/images/coin.mp3");
+const sound = new Audio("./assets/images/SoundLike.mp3");
 const myStorage = window.localStorage.getItem("likeCounter"); // если есть нет до достаем 
 const newImage = document.querySelector(`#test1`);
 if (myStorage) {  // если он null  то не зайдет 
