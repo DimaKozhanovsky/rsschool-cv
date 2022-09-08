@@ -9,7 +9,7 @@
 #### About Myself : 
 Hi , thank you for your attention to my humble person.
 
-###### Some words about me:
+###### Some words about me. :
 
 1. Lover of adventures( for my own fifth point too)
 2. Lover of a good dose of adrenalin( base jumping , parachute jumping, half marathons , yachting ( not on the Minsk Sea of course) jogging ,running away from riot police special forces( currently unavailable )
