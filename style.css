@@ -872,7 +872,7 @@ fieldset {
 .photoclass img {
     max-width: 100%;
     max-height: 100%;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    /*clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
 }
 
 .paragrafmodify {
@@ -1007,7 +1007,7 @@ fieldset {
     width: 40px;
     height: 40px;
     position: relative;
-
+ 
 }
 
 .upAndDown:hover {
