@@ -92,61 +92,7 @@ setState() // функции вызывать снаружи в type model
 //перет тка как 40 строчка проверять есть и лока сторадже
 //  а в 42 уже ложим сетаем значение 
 
-// function r(from,to){
-//   return ~~(Math.random()*(to - from+1)+ from); // ~~  It cuts all fractional digits.
-// }
-// function pick(){
-//   return arguments[r(0,arguments.length - 1)];
-// }
-// function getChar(){
-//   return String.fromCharCode(pick(
-//     r(0x3041, 0x30ff),
-//     r(0x2000, 0x206f),
-//     r(0x0020, 0x003f)
-//   ));
-// }
-// function loop(fn,delay){
-// let stamp = Date.now();
-// function _loop(){
-//   if(Date.now() - stamp >= delay){
-//     fn(); stamp = Date.now();
-//   }
-// requestAnimationFrame(_loop);
-// }
-// requestAnimationFrame(_loop)
-// }
 
-// class Char {
-//   constructor(){
-//     this.element = document.createElement('span');
-//    // this.element.className = "neocoins" 
-//     this.mutate()
-//   }
-//   mutate(){
-//     this.element.textContent = getChar()
-//   }
-// }
-// class Trail {
-//   constructor( list =[],options){
-//     this.list = list;
-//     this.options = Object.assign({size:10 , offset :0},options); //содает из двух свойств один объект
-//     this.body =[Object, Object];
-//     this.move()
-//   }
-// traverse(fn){
-//   this.body.forEach((n,i) => { // i - индекс массива 
-//     let last = (i == this.body.length -1); // cсначало проверят typeof  потом значение === сравниваем i с послденем елеметом масиисва 
-//     if (n) {fn(n,i,last)} // если n cуществует то иф выполниться 
-//   });
-// }
-//  move(){
-//   this.body =[];
-//   let { offset ,size} = this.options ; // деструризация объекта (почитать)
-// //  let offset  = this.options.offset;
-// //  let size = this.options.size;
-//     for (let i = 0; i < size; ++i ){
-//       let item = this.list[offset + i - size + 1];
-//       this.body.push(item) // вставка в конец массива
 
 //     }
 //     this.options.offset = (offset + 1) % (this.list.length + size - 1);
