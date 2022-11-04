@@ -1,0 +1,20 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "welcome.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaKozhanovsky/rsschool-cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaKozhanovsky/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/DimaKozhanovsky/rsschool-cv#readme"
+}

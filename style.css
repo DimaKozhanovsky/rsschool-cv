@@ -232,8 +232,8 @@ h5 {
 
 
 }
-
-@-webkit-keyframes rotation { /* at-rules), они начинаются с символа @, например, @font-face. «Эт-правила» ещё называют CSS-директивами*/
+/* at-rules), они начинаются с символа @, например, @font-face. «Эт-правила» ещё называют CSS-директивами*/
+/* @-webkit-keyframes rotation { 
     from {
         -webkit-transform: rotate(0);
         transform: rotate(0)
@@ -242,9 +242,10 @@ h5 {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
     }
-}
+} */
 
-@keyframes rotation {
+
+/* @keyframes rotation {
     0% {
         -webkit-transform: rotate(0);
         transform: rotate(0)
@@ -257,7 +258,7 @@ h5 {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
     }
-}
+} */
 
 @-webkit-keyframes wink {
     from {
@@ -1109,7 +1110,7 @@ fieldset {
     .arrow span:nth-child(3){
         animation-delay: -0.4s;
     }
-    @keyframes animate {
+    /* @keyframes animate {
         0%{
             opacity: 0;
             transform: rotate(45deg) translate(-20px,-20px);
@@ -1121,7 +1122,7 @@ fieldset {
             opacity: 0;
             transform: rotate(45deg) translate(20px,20px);
         }
-    }
+    } */
     @media (max-width: 1100px) {
         .btn img {
             width: 120px;
