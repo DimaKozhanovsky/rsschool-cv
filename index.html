@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <!--Каждый HTML-документ начинается с декларации типа документа, или «доктайпа». Тип документа необходим, чтобы браузер мог определить версию HTML и правильно отобразить страницу-->
 <html lang="en">   <!-- с помощью js можно менять тут ( для поисковых роботов тоже)-->
 <!--Тегу <html> обычно добавляют важный атрибут lang (сокращение от английского «language»), в котором задаётся язык документа-->
@@ -28,16 +28,18 @@
 
 <div class="demo">
 <div class="mainp" >
-    <span class="neocoins"></span>
-    <p style="color:deepskyblue">
-        Do you want to see my amazing site ?
-    </p>
+    <h2>
+        <p style="color:deepskyblue">
+            Do you want to see my amazing site ?
+        </p>
+    </h2>
+    
 </div>
-    <img src="./assets/images/Panda.webp" width="100%" height="100%" weight="77%" alt="Go into Matrix">
+    <img class="pandaclass" src="./assets/images/Panda.webp" width="100%" height="100%"  alt="Go into Matrix">
     <div class="twobuttons "  >
-        <button class="button-1 testbutton1"> YaaLLaa  !!! </button>
+        <button class="button-1 testbutton1"> I do </button>
 
-        <button class="button-12 testbutton2"> No</button>
+        <button class="button-1 testbutton2"> I dont</button>
     </div>
 
 
@@ -118,7 +120,7 @@
             <h4>1</h4>
             <p class="makecenter" class="paragrafmodify">
             <div class="paragrafmodify" style="margin: 15px">
-                1. Adventurer <a href="https://disk.yandex.ru/client/disk/%D0%AF/Abu%20Dhabi%202022%20Photos%20Public">Abu - Dhabi</a> <br>
+                1. Adventurer 
                 2. Lover of a good dose of adrenaline (base jumping, parachuting, half marathons, yachting (not on the
                 Minsk
                 Sea
@@ -282,7 +284,39 @@
 </div>
 <audio class="audio" src="./assets/images/SoundLike.mp3"></audio>
 
-<script src="./welcome.js"></script>
+
+<link rel="stylesheet" href="pacman.css" />
+<div id="level" class="level"></div>
+<script src="pacman.js"></script>
+<script>
+    const runPacMan = () => {
+
+        console.log('start');
+        const boris = new PacMan(0, 120);
+        let walked = 0;
+        const runBot = () => {
+            boris.runWhileCan().then(({ steps, finish }) => {
+                walked += steps;
+                const rnd = Math.round(Math.random() * 10);
+                if (!finish) {
+                    if (rnd % 2 > 0) {
+                        boris.turnRight();
+                    } else {
+                        boris.turnLeft();
+                    }
+                    runBot();
+                } else {
+                    console.log('finish with', walked, 'steps');
+                }
+            });
+        };
+        runBot();
+    };
+
+    runPacMan();
+</script>
+
 </body>
+
 
 </html>
